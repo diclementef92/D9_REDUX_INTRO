@@ -20,10 +20,12 @@ const Job = ({ data }) => {
       </Col>
       <Col xs={3}>
         <Button
-          onClick={dispatch({
-            type: "ADD_PREFERRED_COMPANY",
-            payload: data,
-          })}
+          onClick={() =>
+            dispatch({
+              type: "ADD_PREFERRED_COMPANY",
+              payload: data,
+            })
+          }
         >
           Aggiungi a preferiti
         </Button>
